@@ -1,8 +1,8 @@
 {
-  "homepage": "https://github.com/jchboettcher/games-leaderboard-backend/",
-  "name": "games-leaderboard-backend",
+  "homepage": "https://github.com/jchboettcher/demo-app-server/",
+  "name": "demo-app-backend",
   "version": "1.0.0",
-  "description": "Backend for the leaderboards of some of my online games.",
+  "description": "Backend for my WHO demo app.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
