@@ -18,7 +18,6 @@ const login = async (obj, { email, password }) => {
     throw new UserInputError('Invalid email or password')
   }
 
-
   // If successful login, set authentication information
   const payload = {
     id: user.id,

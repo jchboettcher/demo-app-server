@@ -1,6 +1,6 @@
 const User = require('../../models/User')
 
-const userById = async (obj, { id }, context) => {
+const userById = async (obj, { id }) => {
   try {
     const user = await User.query().findOne('id', id)
     return user

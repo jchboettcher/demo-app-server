@@ -1,7 +1,7 @@
-# Games Leaderboard Backend
+# Demo App Backend
 
-Backend for the leaderboards of some of my online games (e.g. [Projective Set](https://jchboettcher.github.io/proset/) and [Picnic Ants](https://jchboettcher.github.io/ants/)).
+React demo app using Apollo GraphQL client-server interaction. This repository is the source code for the backend.
 
-Backend structure consists of a set of users. Each user has a name, is linked to a single game and corresponding level, has two score categories, and has a timestamp for when the score was acheived. The name is the display name in the leaderboard. The game and level designate which game and level the score is from. Having two score categories allow versatility for games where there might be two metrics of a "good score" (e.g. Picnic Ants); there are queries for ranking by score1 and by score2. Finally, the timestamp allows us to break ties between scores, and also allows us to have a recent scores query as well.
+Backend structure consists of a set of users and a database of vaccines. Users have a name, email, and password, and in order to view the vaccines, you have to be logged in. The website will store your token in localstorage so even if you navigate away and come back, you'll remained logged in. Logging out will remove this token and return you to the unauthorized homepage. Passwords are hashed and compared using bcrypt, and tokens are created and decoded using jsonwebtoken.
 
 To connect to your own database, run ```npm run copy-env``` in the terminal and fill in the appropriate credentials.
