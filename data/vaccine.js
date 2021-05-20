@@ -15,7 +15,7 @@ casual.define('vaccine', () => {
 
 const vaccineData = []
 
-for (let i = 0; i < 100; ++i) {
+for (let i = 0; i < 30; ++i) {
   vaccineData.push(casual.vaccine)
 }
 
